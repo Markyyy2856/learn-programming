@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Mark Angelo">
+  <meta name="description" content="This page contains all the things that I want to learn as I learn HTML.">
+  <title>MarkBuilds</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Goals for the Year</h1>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#html">Learning HTML</a>
+        </li> <!--'# + id' lets you go to a specific location of your web.-->
+        <li>
+          <a href="#programming">Learning other Languages</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr> <!--Horizontal Rule / Horizontal Line-->
+
+  <main>
+    <article id="html"> <!--Semantic element used to group content. ID is the destination-->
+      <h2>I'm ready to learn HTML</h2>
+      <p>This is my first web page.</p>
+      <section>
+        <h3>HTML5</h3>
+        <img src="img/html5Logo.png" alt="HTML5 Logo" title="I am learning HTML5" width="512" height="512">
+        <!--'img src' lets us insert images-->
+
+        <figure>
+          <figcaption>
+            An example of HTML5 code:
+          </figcaption>
+          <p>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+          </p>
+        </figure>
+      </section>
+
+      <hr>
+
+      <section>
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how:</p>
+        <ol> <!--'ol' means ordered list (li) 1,2,3 and so on-->
+          <li>...I learn more about web dev. </li> <!--'br' Line Break / Additional Line Below-->
+          <li>...I plan out my Schedule. </li>
+          <li>...I use resources available online such as <a href="https://www.w3schools.com/">W3schools</a> and others.
+          </li>
+          <!--'a & href' used to create hyperlinks that point to a specific destination/page-->
+        </ol>
+
+        <br>
+
+        <!--TABLE-->
+        <table>
+          <caption>My Daily Schedule</caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+              </td>
+              <td>Write Code</td>
+            </tr>
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+              </td>
+              <td>Study for other Languages</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All Other Times</td>
+              <td>Free Time</td>
+            </tr>
+            <tr>
+              <th scope="row">Midnight</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">And that's what I do everyday, 5 days a week.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </article>
+
+    <!--
+    Some HTML Entities:
+    & - Starts out html entity
+    &nbsp; - non-breaking space
+    &lt; - less than
+    &gt; - greater than
+    &copy; - copyright
+    -->
+
+    <hr>
+
+    <article id="programming">
+      <h2>I Am Also Planning to Learn Other Programming Languages</h2>
+      <p>I needed to work hard and <em>improve my programming skills.</em></p> <!--'em' italicizes text-->
+      <p>I don't have anything to do, that's why I want to learn something.</p>
+
+      <section>
+        <h3>Programming Languages That I Wanted To Learn Aside from <abbr title="Hypertext Markup Language">HTML</abbr>
+        </h3>
+        <ul> <!--'ul' means unordered list (li) bulleted-->
+          <li>
+            <p>Java</p>
+            <figure>
+              <img src="img/javalogo.png" alt="Java Logo" title="I want to learn Java" width="512" height="512"
+                loading="lazy">
+              <figcaption>
+                I want to learn Java to build cross-platform applications, especially for Android development and
+                large-scale systems that require strong object-oriented design.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>C</p>
+            <figure>
+              <img src="img/cLogo.png" alt="C Logo" title="I want to learn C" width="512" height="512" loading="lazy">
+              <figcaption>
+                I want to learn C to understand how programs interact with hardware and to learn low-level programming
+                concepts like memory management and pointers.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>C++</p>
+            <figure>
+              <img src="img/c++Logo.png" alt="C++ Logo" title="I want to learn C++" width="512" height="512"
+                loading="lazy">
+              <figcaption>
+                I want to learn C++ to build efficient and complex systems using object-oriented programming, especially
+                useful for game development and performance-critical applications.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>C#</p>
+            <figure>
+              <img src="img/csharpLogo.png" alt="C# Logo" title="I want to learn C#" width="512" height="512"
+                loading="lazy">
+              <figcaption>
+                I want to learn C# to create Windows applications and understand software development using the .NET
+                framework, especially in enterprise and Unity game development.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>Python</p>
+            <figure>
+              <img src="img//pythonLogo.png" alt="Python Logo" title="I want to learn Python" width="512" height="512"
+                loading="lazy">
+              <figcaption>
+                I want to learn Python because of its simple syntax and versatility, ideal for automation, data
+                analysis,
+                web development, and rapid prototyping.
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Things That I Needed To Avoid</h3>
+        <!--'dl' means description list-->
+        <dl>
+          <dt>Time Management</dt> <!--'dt & dd' description term & description details-->
+          <dd>Reduce time <strong>playing mobile games!</strong></dd> <!--'strong' bolds the text-->
+
+          <dt>Sleeping Schedule</dt>
+          <dd>Sleep <mark>as early as possible.</mark></dd> <!--'mark' highlights the text-->
+
+          <dt>Procrastination</dt>
+          <dd>Stop binge-watching and start learning!</dd>
+        </dl>
+      </section>
+    </article>
+
+    <hr>
+
+    <!--FORMS-->
+    <article id="contact">
+      <h2>Contact Me</h2>
+      <p>I'd really like to hear from you!</p>
+
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+          </p>
+          <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your Secret" required>
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="09123456789" pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+              required>
+          </p>
+          <p>
+            <label for="decade">Favorite Decade:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+          </p>
+          <p>
+            <label for="coffee">Favorite coffee:</label>
+            <select name="coffee" id="coffee">
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option>
+              </optgroup>
+              <optgroup label="Espresso Drinks">
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="cortado">Cortado</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <!-- <p>
+          <label for="coffee">Favorite Coffee:</label>
+          <input type="text" name="coffee" id="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+            <option value="coffee"></option>
+            <option value="latte"></option>
+            <option value="espressp"></option>
+            <option value="cortado"></option>
+            <option value="americano"></option>
+            <option value="others"></option>
+          </datalist>
+        </p> -->
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>What is your favorite food?></legend>
+          <p>
+            <input type="radio" name="food" id="tacos" value="tacos">
+            <label for="tacos">Tacos</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="others" value="others">
+            <label for="others">Others</label>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="fish" value="fish">
+            <label for="fish">Fish</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+            <label for="otherPet">Other Pet</label>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Send Me A Note</legend>
+          <label for="message">Your Message</label>
+          <br>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </form>
+    </article>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>
+      &lt;&lt;&lt; &copy; <a href="about.html">MarkBuilds</a> &gt;&gt;&gt;
+    </p>
+    <p>
+      <a href="#">Back to Top</a>
+    </p>
+  </footer>
+</body>
+
+</html>
