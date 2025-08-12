@@ -83,7 +83,6 @@ def is_a_right_triangle(a, b, c):
     if c > a and c > b:
         return c ** 2 == a ** 2 + b ** 2
     if a > b and a > c:
-    if a > b and a > c:
         return a ** 2 == b ** 2 + c ** 2
 print(is_a_right_triangle(5, 3, 4))
 print(is_a_right_triangle(1, 3, 4))
