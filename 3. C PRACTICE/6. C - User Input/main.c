@@ -33,5 +33,35 @@ int main()
 
     fgets(name, 20, stdin); // Using fgets to read a string with spaces
     printf("Your name is %s ghff \n", name);
+
+
+    //TESTING MY KNOWLEDGE
+
+    int favNumber;
+    double height;
+    char lastName;
+    char favColor[16];
+
+    printf("Enter your favorite number: ");
+    scanf("%d", &favNumber);
+
+    printf("Enter your height in cm: ");
+    scanf("%lf", &height);
+
+    printf("Enter the initial of your last name: ");
+    scanf(" %c", &lastName);
+
+    // Clear leftover newline before fgets because it gets an error
+    while (getchar() != '\n');
+
+    printf("Enter your favorite color: ");
+    fgets(favColor, 16, stdin);
+    favColor[strcspn(favColor, "\n")] = 0; // strip newline
+
+    printf("\nYour favorite number is %d.", favNumber);
+    printf("\nYour height is %.2f, as tall as a giraffe!", height);  
+    printf("\nThe first letter of your last name is %c.", lastName);
+    printf("\nLastly, your favorite color is %s.", favColor);
+
     return 0;
 }
