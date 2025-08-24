@@ -1,6 +1,5 @@
 {
-  "files.associations": {
-    "*.embeddedhtml": "html",
-    "iostream": "cpp"
-  }
+    "files.associations": {
+        "ostream": "cpp"
+    }
 }
