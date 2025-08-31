@@ -23,5 +23,23 @@ int main()
     printf("\n%f", sqrt(36));     // Square root function
     printf("\n%f", ceil(15.63));  // Rounds up
     printf("\n%f", floor(15.63)); // Rounds down
+
+    //Example 1
+    int age = 20; 
+    float height = 5.789;
+    char initial = 'M';
+    
+    printf("Age: %d | ", age);
+    printf("Height: %.2f | ", height);
+    printf("Initial: %c", initial);
+
+    //Exampple 2
+    int a = 7, b = 3; 
+    
+    printf("a = %d, b = %d\n", a, b); 
+    printf("Sum = %d\n", a + b); 
+    printf("Difference = %d\n", a - b); 
+    printf("Product = %d\n", a * b); 
+    printf("Quotient = %.2f", (float)a / b);
     return 0;
 }

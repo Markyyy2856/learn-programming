@@ -34,8 +34,7 @@ int main()
     fgets(name, 20, stdin); // Using fgets to read a string with spaces
     printf("Your name is %s ghff \n", name);
 
-
-    //TESTING MY KNOWLEDGE
+    // TESTING MY KNOWLEDGE
 
     int favNumber;
     double height;
@@ -52,16 +51,61 @@ int main()
     scanf(" %c", &lastName);
 
     // Clear leftover newline before fgets because it gets an error
-    while (getchar() != '\n');
+    while (getchar() != '\n')
+        ;
 
     printf("Enter your favorite color: ");
     fgets(favColor, 16, stdin);
     favColor[strcspn(favColor, "\n")] = 0; // strip newline
 
     printf("\nYour favorite number is %d.", favNumber);
-    printf("\nYour height is %.2f, as tall as a giraffe!", height);  
+    printf("\nYour height is %.2f, as tall as a giraffe!", height);
     printf("\nThe first letter of your last name is %c.", lastName);
     printf("\nLastly, your favorite color is %s.", favColor);
+
+    // Example 1
+    char initial;
+    int age;
+
+    printf("Enter you name's first letter: ");
+    scanf(" %c", &initial);
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    printf("\nFirst letter: %c, Age: %d", initial, age);
+
+    // Example 2
+    int firstNum;
+    int secondNum;
+
+    printf("Enter first number: ");
+    scanf("%d", &firstNum);
+
+    printf("Enter second number: ");
+    scanf("%d", &secondNum);
+
+    printf("\nSum: %d", firstNum + secondNum);
+    printf("\nDifference: %d", firstNum - secondNum);
+    printf("\nProduct: %d", firstNum * secondNum);
+    printf("\nQuotient: %.2f", (float)firstNum / secondNum);
+
+    //Example 3
+    char name[20];
+    int age;
+    float gpa;
+    
+    printf("Enter your name: ");
+    scanf("%s", name);   // removed & here
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    printf("Enter your GPA: ");
+    scanf("%f", &gpa);
+    
+    printf("\n--- Student Information ---");
+    printf("\nName: %s", name);
+    printf("\nAge: %d", age);
+    printf("\nGPA: %.2f", gpa);
 
     return 0;
 }
