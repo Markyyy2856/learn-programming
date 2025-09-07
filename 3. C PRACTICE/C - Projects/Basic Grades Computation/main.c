@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Basic Grades Calculator
+
 // A constant for the number of grades.
 #define NUM_GRADES 5
 
