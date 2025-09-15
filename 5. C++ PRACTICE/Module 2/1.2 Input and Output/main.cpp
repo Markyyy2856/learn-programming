@@ -50,7 +50,7 @@ int main()
     //Test on different compiler
     float value, squareroot;
 
-        cout << "Give me a number and I will find its square root:" << endl;
+        cout << "Give me a number and I will find its square root: " << endl;
         cin >> value;
         if(value >= 0.0) {
 	        squareroot = sqrtf(value);
@@ -58,8 +58,27 @@ int main()
 	        cout << "The square root is: " << squareroot << endl;
         }
 
-    //LAB Getting input from user
+    /*
+    LAB Getting input from user
+    #include <iostream>
+    
+    int main() {
+    int num1, num2, num3, num4;
+    
+    std::cout << "Enter 1st number of the IP Address: ";
+    std::cin >> num1;
+    std::cout << "Enter 2nd number of the IP Address: ";
+    std::cin >> num2;
+    std::cout << "Enter 3rd number of the IP Address: ";
+    std::cin >> num3;
+    std::cout << "Enter 4th number of the IP Address: ";
+    std::cin >> num4;
+    
+    std::cout << num1 << "." << num2 << "." << num3 << "." << num4;
 
+    return 0;
+    }
+    */
 
     return 0;
 }

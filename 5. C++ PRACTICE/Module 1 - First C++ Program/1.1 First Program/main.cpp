@@ -46,5 +46,12 @@ int main(void) {
   cout << "Welcome to C++!\n";
   cout << "Welcome to C++!";
   //5 & 6 Gives an error
+
+
+  //Drawing a shape
+  cout << "   /|" << endl;
+  cout << "  / |" << endl;
+  cout << " /  |" << endl;
+  cout << "/___|" << endl;
 	return 0;
 }
