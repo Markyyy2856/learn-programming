@@ -1,38 +1,65 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
 
-    std::cout << "Hello" << std::endl;
-    std::cout << "World\n";
-    std::cout << "Let's code!" << std::endl;
+    cout << "Hello" << endl;
+    cout << "World\n";
+    cout << "Let's code!" << endl;
 
     //length() Function
-    std::string myName = "Mark Angelo";
+    string myName = "Mark Angelo";
 
-    std::cout << myName.length(); //Counts every character inside string
+    cout << myName.length(); //Counts every character inside string
 
-    std::cout << "\n";
+    cout << "\n";
 
     //Indexing
-    std::cout << myName[3]; //Accessing specific letter using indexing
+    cout << myName[3]; //Accessing specific letter using indexing
 
-    std::cout << "\n";
+    cout << "\n";
 
     myName[0] = 'B'; //Modifying a specific character
-    std::cout << myName;
+    cout << myName;
 
-    std::cout << "\n";
+    cout << "\n";
 
     //find() Function - Passing parameters/arguments
-    std::string fruit = "Green Apple";
+    string fruit = "Green Apple";
 
-    std::cout << fruit.find("en", 0);
+    cout << fruit.find("n Ap", 0); //Give a string/character to find, then index where to start looking
 
-    std::cout << "\n";
+    cout << "\n";
 
     //substr() function - taking a part
-    std::cout << fruit.substr(4, 3);
+    cout << fruit.substr(4, 3); //starting index and end, outputs the characters inside
 
+
+    //Example 1
+    string fname = "Mark";
+    string lname = "Reyes";
+    string fullName = fname + " " + lname; //Concatenates first and last name
+
+    cout << "Full Name: " << fullName;
+
+    //Example 2
+    string fullName = "Mark Reyes";
+
+    cout << "Length: " << fullName.length() << endl;
+    cout << "First Character: " << fullName[0] << endl;
+    cout << "Last Character: " << fullName[fullName.length() - 1] << endl;
+
+    //Example 3
+    string phrase = "C++ is fun!";
+
+    cout << "Original: " << phrase << endl;
+
+    cout << "Reversed: ";
+    for (int i = phrase.length() - 1; i >= 0; i--)
+    {
+        cout << phrase[i];
+    }
     return 0;
 }
 
