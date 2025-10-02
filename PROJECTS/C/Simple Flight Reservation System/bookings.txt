@@ -1,0 +1,4 @@
+--- Flight Booking Records ---
+Total Bookings: 1
+
+Passenger: Mark, Seat: 3B
