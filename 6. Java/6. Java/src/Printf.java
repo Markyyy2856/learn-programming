@@ -58,6 +58,14 @@ public class Printf {
         //number = right justified padding
         //negative number = left justified padding
 
+        int id1 = 1;
+        int id2 = 23;
+        int id3 = 456;
+        int id4 = 7890;
 
+        System.out.printf("%04d\n", id1); //Aligns it to others by adding zeroes ex. 04(adds 3 zeroes making it 0001)
+        System.out.printf("%4d\n", id2);  //Same with zeroes but adds space instead
+        System.out.printf("%-4d\n", id3); //Left justified/aligned spaces
+        System.out.printf("%d\n", id4);
     }
 }
