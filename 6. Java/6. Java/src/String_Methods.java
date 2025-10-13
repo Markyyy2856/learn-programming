@@ -1,15 +1,17 @@
-
+import java.util.Scanner;
 
 public class String_Methods {
 
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
 
         String name = "Mark Angelo";
 
         //length - prints number of strings
         int length = name.length();
 
-        //charAt - prints letter at specific index assigned
+        //charAt(index) - prints letter at specific index assigned
         char letter = name.charAt(0);
 
         //indexOf - prints index of letter instead of index
@@ -53,6 +55,8 @@ public class String_Methods {
         System.out.println(letter);
         System.out.println(index);
         System.out.println(lastIndex);
+
+        scanner.close();
 
     }
 }
