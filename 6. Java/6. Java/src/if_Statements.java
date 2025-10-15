@@ -41,7 +41,7 @@ public class if_Statements {
             System.out.println("You are a child.");
         }
 
-        //Student Condition
+        //Constructors.Student Condition
         if(isStudent){
             System.out.println("You are a student.");
         } else {

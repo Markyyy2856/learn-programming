@@ -51,7 +51,7 @@ public class Nested_If {
             System.out.println("It's freezing!");
         }
 
-        //Example 2: Student Scholarship Eligibility
+        //Example 2: Constructors.Student Scholarship Eligibility
         int grade;
         double income;
 
